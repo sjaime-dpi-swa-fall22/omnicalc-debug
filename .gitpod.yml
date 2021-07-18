@@ -1,0 +1,16 @@
+image: jelaniwoods/appdev2021-omnicalc-debug@sha256:b0686fe99a69a56577b4487ba7bc922dcebb13744eb122e09193e316395b6a6d
+
+tasks:
+  - command: bundle install
+  - init: bin/setup
+ports:
+  - port: 3000
+    onOpen: open-preview
+    visibility: public
+
+vscode:
+  extensions:
+    - shd101wyy.markdown-preview-enhanced
+    - wingrunr21.vscode-ruby
+    - mbessey.vscode-rufo
+    - aliariff.vscode-erb-beautify
