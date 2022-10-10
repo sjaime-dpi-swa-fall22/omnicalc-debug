@@ -6,7 +6,7 @@ class MeteorologistController < ApplicationController
 
     url = "https://maps.googleapis.com/maps/api/geocode/json?key=" +  maps_key + "&address=" + @street_address
 
-    api_response = open(url).read
+    api_response = URI.open(url).read
 
     parsed_data = JSON.parse(api_response)
 
@@ -21,7 +21,7 @@ class MeteorologistController < ApplicationController
 
     api_url = "https://api.darksky.net/forecast/"+ dark_sky_key + "/" + @lat + "," +  @lng
     
-    api_response = open(api_url).read
+    api_response = URI.open(api_url).read
     results = JSON.parse(api_response)
 
     currently_data = results.fetch("currently")

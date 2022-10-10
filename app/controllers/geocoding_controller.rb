@@ -7,7 +7,7 @@ class GeocodingController < ApplicationController
 
     url = "https://maps.googleapis.com/maps/api/geocode/json?key=" +  maps_key + "&address=" + @street_address
 
-    api_response = open(url).read
+    api_response = URI.open(url).read
 
     parsed_data = JSON.parse(api_response)
 
