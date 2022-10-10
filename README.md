@@ -13,7 +13,9 @@ Here is your [target](https://omnicalc-debug.matchthetarget.com/)
 
 The starting point of this app has four different forms which take input from users, some of which run through the Google Maps API and the DarkSky API, be sure to [update your enviroment credientals](https://chapters.firstdraft.com/chapters/792).  
 
-<strong>YOUR JOB:</strong> Debug all 4 forms. 
+<strong>YOUR JOB:</strong> Debug all 4 forms.
+
+It might be helpful to keep [the Forms chapter](https://chapters.firstdraft.com/chapters/881) open while working.
 
 Debugging checklist:
 
